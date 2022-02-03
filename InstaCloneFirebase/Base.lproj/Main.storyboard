@@ -84,36 +84,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etu-am-SlS">
-                                <rect key="frame" x="108" y="508" width="190" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58B-b6-NGZ">
-                                <rect key="frame" x="158" y="599" width="92" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58B-b6-NGZ">
+                                <rect key="frame" x="157" y="698" width="92" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Upload"/>
                                 <connections>
                                     <action selector="actionButtonClicked:" destination="PDM-FT-bwf" eventType="touchUpInside" id="QZ7-PC-vNP"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="miyo_gorsel" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-D4-dhe">
-                                <rect key="frame" x="87" y="126" width="240" height="307"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miyo_gorsel" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-D4-dhe">
+                                <rect key="frame" x="87" y="71" width="240" height="307"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="307" id="P7c-8f-Zg9"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="etu-am-SlS">
+                                <rect key="frame" x="108" y="508" width="190" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d28-3G-j2k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GP8-D4-dhe" firstAttribute="leading" secondItem="d28-3G-j2k" secondAttribute="leading" constant="87" id="1Jp-g1-DYf"/>
                             <constraint firstItem="d28-3G-j2k" firstAttribute="bottom" secondItem="58B-b6-NGZ" secondAttribute="bottom" constant="183" id="4KC-HP-1rM"/>
-                            <constraint firstItem="etu-am-SlS" firstAttribute="top" secondItem="GP8-D4-dhe" secondAttribute="bottom" constant="71" id="YQB-aL-Tva"/>
+                            <constraint firstItem="GP8-D4-dhe" firstAttribute="leading" secondItem="d28-3G-j2k" secondAttribute="leading" constant="87" id="HiR-xd-SbB"/>
                             <constraint firstItem="58B-b6-NGZ" firstAttribute="top" secondItem="etu-am-SlS" secondAttribute="bottom" constant="57" id="by3-SU-RLw"/>
                             <constraint firstItem="58B-b6-NGZ" firstAttribute="leading" secondItem="d28-3G-j2k" secondAttribute="leading" constant="158" id="edb-DV-agS"/>
                             <constraint firstItem="d28-3G-j2k" firstAttribute="trailing" secondItem="etu-am-SlS" secondAttribute="trailing" constant="116" id="erU-GD-i0w"/>
-                            <constraint firstItem="GP8-D4-dhe" firstAttribute="centerX" secondItem="5UH-ke-LLK" secondAttribute="centerX" id="fG1-ak-YPh"/>
+                            <constraint firstItem="GP8-D4-dhe" firstAttribute="top" secondItem="d28-3G-j2k" secondAttribute="top" constant="27" id="g0B-ar-ytH"/>
                             <constraint firstItem="etu-am-SlS" firstAttribute="centerX" secondItem="58B-b6-NGZ" secondAttribute="centerX" id="n2h-wk-ctt"/>
-                            <constraint firstItem="GP8-D4-dhe" firstAttribute="top" secondItem="d28-3G-j2k" secondAttribute="top" constant="84" id="t0a-e6-hwp"/>
                             <constraint firstItem="etu-am-SlS" firstAttribute="leading" secondItem="d28-3G-j2k" secondAttribute="leading" constant="108" id="tn3-sS-8c8"/>
+                            <constraint firstItem="GP8-D4-dhe" firstAttribute="centerX" secondItem="5UH-ke-LLK" secondAttribute="centerX" id="uBz-T0-s96"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up" catalog="system" id="AuE-P8-dSY"/>
